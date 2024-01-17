@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Registration Form</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Car Registration Form</h2>
+        <form action="/Car_Rental_Website/CarInsertController" method="post">
+            <div class="form-group">
+                <label for="make">Make:</label>
+                <input type="text" id="make" name="make" required>
+            </div>
+            <div class="form-group">
+                <label for="model">Model:</label>
+                <input type="text" id="model" name="model" required>
+            </div>
+            <div class="form-group">
+                <label for="year">Year:</label>
+                <input type="number" id="year" name="year" required>
+            </div>
+            <div class="form-group">
+                <label for="imageUrl">Image URL:</label>
+                <input type="text" id="imageUrl" name="imageUrl" required>
+            </div>
+            <div class="form-group">
+                <label for="pricePerMonth">Price Per Month:</label>
+                <input type="number" step="0.01" id="pricePerMonth" name="pricePerMonth" required>
+            </div>
+            <button type="submit">Register Car</button>
+        </form>
+    </div>
+</body>
+
+</html>
